@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Willow - Gathering</title>
+  </head>
+  <body>
+    <div id="side-menu" class="sidebar">
+        <a onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">Home</a>
+        <span id="drop-1" onmouseover="dropdown('general-dropdown')" onmouseout="dropup('general-dropdown')">
+          <a href="general.html">General</a>
+          <div id="general-dropdown" onmouseover="showDrop('drop-btn-1')" onmouseout="hideDrop('drop-btn-1')">
+            <a href="databases.html">Databases</a>
+            <a href="support.html">Online Support Groups</a>
+            <a href="personal.html">Personal Coping</a>
+          </div>
+        </span>
+        <a href="map.html">Resources Near You</a>
+        <span id="drop-2" onmouseover="dropdown('religion-dropdown')" onmouseout="dropup('religion-dropdown')">
+          <a href="religion.html">Spiritual & Religious</a>
+          <div id="religion-dropdown" onmouseover="showDrop('drop-btn-2')" onmouseout="hideDrop('drop-btn-2')">
+            <a href="christianity.html">Christianity</a>
+            <a href="judaism.html">Judaism</a>
+            <a href="islam.html">Islam</a>
+          </div>
+        </span>
+        <a href="gathering.html">Gathering</a>
+        <a href="planning.html">Planning Ahead</a>
+        <a href="kids.html">Kids & Young Adults</a>
+        <a href="voices.html">Voices</a>
+        <a href="about.php">About</a>
+    </div>
+
+    <div id="navbar">
+      <span id="left-navbar">
+        <span id="open-sidebar">
+          <a onclick="openSlideMenu()">
+            <svg width="20" height="20">
+              <path d="M0,5 20,5" stroke="#444" stroke-weight="3"/>
+              <path d="M0,10 20,10" stroke="#444" stroke-weight="3"/>
+              <path d="M0,15 20,15" stroke="#444" stroke-weight="3"/>
+            </svg>
+          </a>
+        </span>
+
+        <span id="willow-logo">
+          <a href="index.html">
+            <img src="images/willow.jpg" alt="">
+          </a>
+        </span>
+
+        <h3 id="willow-top-title">willow</h3>
+      </span>
+
+      <span id="right-navbar">
+        <a id="header-share-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScyr3UbyTQbbWcXZtbDlFMhCTRMxw6XzWECs20eh39spCDFRA/viewform" target="_blank"><button type="button" name="button">Share a resource</button></a>
+      </span>
+    </div>
+
+    <div class="background">
+
+    </div>
+
+    <div class="container">
+
+      <div class="sub-header">
+        <div id="main-header-box">
+        <span class="sub-header-h1">
+          <img id="leaf-left" src="images/leaf_left.png" alt="">
+          <h1>gathering</h1>
+          <img id="leaf-right" src="images/leaf_right.png" alt="">
+        </span>
+        <h2>virtual memorial services, funeral planning help, & creative ideas for mourning in isolation</h2>
+        </div>
+      </div>
+
+      <div class="page-links">
+        <div class="sub-link-box">
+          <h2>virtual gathering</h2>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.gatheringus.com%2F&sa=D&sntz=1&usg=AFQjCNHOlwNarDT4BrLGr440usRQhsJ_NQ" target="_blank">GatheringUs</a>
+            <p>"GatheringUs is a lasting online space that brings communities together after a death. You can post a free obituary, crowdfund for expenses or a charity, create gatherings & inform your community."</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.forevermissed.com%2F&sa=D&sntz=1&usg=AFQjCNESeTP3TezHpdtKuEHlaY-WpPURYQ" target="_blank">Forever Missed</a>
+            <p>An online memorial service specifically made to be easy to use & accessible even to those with limited computer skills.</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.mykeeper.com%2F&sa=D&sntz=1&usg=AFQjCNGTsY5aNFqHwskYTp9rxr7IkRcWqA" target="_blank">Keeper</a>
+            <p>This online memorial service is interactive, & includes features such as a guest/tribute book for friends & family to share their memories or the family tree function, which allows you to map out your family history.</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.memories.net%2F&sa=D&sntz=1&usg=AFQjCNGaQAqGSZau20pUsKSQAzuYliW9RQ" target="_blank">Memories</a>
+            <p>"A Memories page offers an ad-free, private and secure space to safeguard and share memories of the people, places, moments and milestones that matter the most. " This site will ensure that personal information will remain secure.</p>
+          </div>
+          <div class="link">
+            <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.yourtribute.com%2F&sa=D&sntz=1&usg=AFQjCNHzCmOJq9lFYvVZp6tcuADuPkGBog" target="_blank">YourTribute</a>
+            <p>This site is a database that offers online memorial services, funeral planning information, advanced planning aid, care-giving, & more.</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.shiva.com%2Flearning-center%2Fcoping%2Fjewish-grief-and-mourning-during-the-covid-19-coronavirus-pandemic%2F&sa=D&sntz=1&usg=AFQjCNE4ny0IEl80spm3LnP5U9o0si4tPQ" target="_blank">Shiva.com</a>
+            <p>Information, guidance, & practices on grieving in the Jewish community during COVID-19. Shiva.com also offers best practices for <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.shiva.com%2Flearning-center%2Fcoping%2Fjewish-grief-and-mourning-during-the-covid-19-coronavirus-pandemic%2F&sa=D&sntz=1&usg=AFQjCNE4ny0IEl80spm3LnP5U9o0si4tPQ">safely sitting shiva.</a></p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.econdolence.com%2Flearning-center%2Fplanning-and-coordinating%2Fviewneral-collaborative-and-interactive-virtual-funerals%2F&sa=D&sntz=1&usg=AFQjCNEALdB9EcXhjOZeMcFNF4i_d2iDDA" target="_blank">eCondolence Viewneral</a>
+            <p>An interactive & collaborative funeral service that virtually allows you to plan the funeral, invite those who will participate in the service, & allow family & friends to attend virtually, communicate condolence requests & more, all with the help of a funeral director.</p>
+          </div>
+        </div>
+        <span class="wrap">
+        <div class="sub-link-box">
+          <h2>funerals</h2>
+          <div class="link">
+            <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.orderofthegooddeath.com%2Fburials-funerals-under-covid-19&sa=D&sntz=1&usg=AFQjCNFy3WWuvC-fAO5IuSFjjhanxdSI2g" target="_blank">Burial information</a>
+            <p>Information on best practices & precautions from the Order of the Good Death.</p>
+          </div>
+          <div class="link">
+            <a href="https://www.youtube.com/watch?v=4cbCU-0Hm0c&feature=emb_logo" target="_blank">Ask a Mortician: Funerals</a>
+            <p>Caitlin Doughty of OGD discusses funerals in the age of COVID-19 on YouTube.</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcommunity%2Ftribal%2Findex.html&sa=D&sntz=1&usg=AFQjCNH_aAj3IA_WR1JSQ6d31sQK97H1jw" target="_blank">CDC guidance for tribal communities</a>
+            <p>Resources from the CDC on funeral & burial services as well as coping & social distancing intended specifically for members of tribal communities in the US.</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.funeralocity.com%2F&sa=D&sntz=1&usg=AFQjCNEDGX4wzb4HL1th1I3vgt2PBaa8SA" target="_blank">Funeralocity</a>
+            <p>"Funeralocity is changing the way people compare funeral homes by providing families an easy way to look at all of the funeral homes in one spot." They will continue to assist families in arranging burial & cremation during this time.</p>
+          </div>
+        </div>
+        <div class="sub-link-box">
+          <h2>creative mourning ideas</h2>
+          <div class="link">
+            <a href="https://www.youtube.com/watch?v=yHET_Q5fok4" target="_blank">Pia Interlandi: ideas for creative mourning</a>
+            <p>Creative Rituals for death in the times of COVID-19 shared by Pia Interlandi on YouTube. One great idea is plaster-casting or drawing the hand of your loved one so that people can "hold their hand" even across current social distances.</p>
+          </div>
+          <div class="link">
+            <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.orderofthegooddeath.com%2Ffunerals-dying-in-absentia-inspiration-tips-during-covid-19&sa=D&sntz=1&usg=AFQjCNH_A2DihukyJlHQjO6Gc56c-KRhNQ" target="_blank">Dying in Absentia: Inspiration & Tips</a>
+            <p>Creative mourning ideas from OGD including collaborative playlist-making to honor the deceased's favorite songs or a virtual altar to commemorate them.</p>
+          </div>
+        </div>
+        </span>
+      </div>
+
+      <script>
+        // opening and closing side menu
+        function openSlideMenu(){
+          document.getElementById('side-menu').style.width = '250px';
+        }
+
+        function closeSlideMenu(){
+          document.getElementById('side-menu').style.width = '0';
+          document.getElementById('general-dropdown').style.height = "0";
+          document.getElementById('drop-btn-1').innerHTML = "\u002B";
+          // document.getElementById('religion-dropdown').style.height = "0";
+        }
+
+        // showing map descriptions
+        function showDesc(id){
+          document.getElementById(id).style.height = "100px";
+        }
+
+        function hideDesc(id){
+          document.getElementById(id).style.height = "0px";
+        }
+
+        function dropdown(id){
+          document.getElementById(id).style.height = "80px";
+        }
+
+        function dropup(id){
+          document.getElementById(id).style.height = "0";
+        }
+      </script>
+    </div>
+
+    <footer class="footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="general.html">General</a></li>
+        <li><a href="map.html">Resources Near You</a></li>
+        <li><a href="religion.html">Spiritual & Religious</a></li>
+        <li><a href="gathering.html">Gathering</a></li>
+        <li><a href="planning.html">Planning Ahead</a></li>
+        <li><a href="kids.html">Kids & Young Adults</a></li>
+        <li><a href="voices.html">Voices</a></li>
+        <li><a href="about.php">About</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Willow - Kids & Teens</title>
+  </head>
+  <body>
+    <div id="side-menu" class="sidebar">
+        <a onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">Home</a>
+        <span id="drop-1" onmouseover="dropdown('general-dropdown')" onmouseout="dropup('general-dropdown')">
+          <a href="general.html">General</a>
+          <div id="general-dropdown" onmouseover="showDrop('drop-btn-1')" onmouseout="hideDrop('drop-btn-1')">
+            <a href="databases.html">Databases</a>
+            <a href="support.html">Online Support Groups</a>
+            <a href="personal.html">Personal Coping</a>
+          </div>
+        </span>
+        <a href="map.html">Resources Near You</a>
+        <span id="drop-2" onmouseover="dropdown('religion-dropdown')" onmouseout="dropup('religion-dropdown')">
+          <a href="religion.html">Spiritual & Religious</a>
+          <div id="religion-dropdown" onmouseover="showDrop('drop-btn-2')" onmouseout="hideDrop('drop-btn-2')">
+            <a href="christianity.html">Christianity</a>
+            <a href="judaism.html">Judaism</a>
+            <a href="islam.html">Islam</a>
+          </div>
+        </span>
+        <a href="gathering.html">Gathering</a>
+        <a href="planning.html">Planning Ahead</a>
+        <a href="kids.html">Kids & Young Adults</a>
+        <a href="voices.html">Voices</a>
+        <a href="about.php">About</a>
+    </div>
+
+    <div id="navbar">
+      <span id="left-navbar">
+        <span id="open-sidebar">
+          <a onclick="openSlideMenu()">
+            <svg width="20" height="20">
+              <path d="M0,5 20,5" stroke="#444" stroke-weight="3"/>
+              <path d="M0,10 20,10" stroke="#444" stroke-weight="3"/>
+              <path d="M0,15 20,15" stroke="#444" stroke-weight="3"/>
+            </svg>
+          </a>
+        </span>
+
+        <span id="willow-logo">
+          <a href="index.html">
+            <img src="images/willow.jpg" alt="">
+          </a>
+        </span>
+
+        <h3 id="willow-top-title">willow</h3>
+      </span>
+
+      <span id="right-navbar">
+        <a id="header-share-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScyr3UbyTQbbWcXZtbDlFMhCTRMxw6XzWECs20eh39spCDFRA/viewform" target="_blank"><button type="button" name="button">Share a resource</button></a>
+      </span>
+    </div>
+
+    <div class="background">
+
+    </div>
+
+    <div class="container">
+
+      <div class="sub-header">
+        <div id="main-header-box">
+        <span class="sub-header-h1">
+          <img id="leaf-left" src="images/leaf_left.png" alt="">
+          <h1>kids & teens</h1>
+          <img id="leaf-right" src="images/leaf_right.png" alt="">
+        </span>
+        <h2>resources for helping children, teens, & young adults cope with grief</h2>
+        </div>
+      </div>
+
+      <div class="page-links">
+        <div class="sub-link-box">
+          <h2>children</h2>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.winstonswish.org%2Fcoronavirus%2F&sa=D&sntz=1&usg=AFQjCNEWHmwFCxCGKD3YZmP_SzyYtixzbQ" target="_blank">Winston's Wish</a>
+            <p>"Information, advice & guidance on supporting bereaved children & young people during the coronavirus outbreak & our updated services & opening times."</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.schoolcrisiscenter.org%2Fresources%2Fcovid-19-pandemic-resources%2F&sa=D&sntz=1&usg=AFQjCNGHDgUmc-I2Y6kYVrJD04_J6eKgUQ" target="_blank">Los Angeles Children's Hospital: COVID-19 resources</a>
+            <p>Support for children, students, parents, educators, pediatricians, & more!</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fchildrengrieve.org%2Fabout-us%2Fnews%2F208-covid-19&sa=D&sntz=1&usg=AFQjCNGiwXtxHfbWjrYwAwHMRh0aUozfLQ" target="_blank">National Alliance for Grieving Children</a>
+            <p>"A series of free resources, educational opportunities & connection calls to facilitate those who work with grieving families accommodating to the current reality. " (English & Spanish)</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.dougy.org%2Fdocs%2FCOVID-19_What_to_say.pdf&sa=D&sntz=1&usg=AFQjCNFw9o6zs4NtPKCXEHMnHJsQcrgZZg" target="_blank">National Center for Grieving Children & Families</a>
+            <p>Sample scripts for you to use for sharing difficult news with children & teens, as well as a version for notifying parents & caregivers. </p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fdaily-life-coping%2Ftalking-with-children.html&sa=D&sntz=1&usg=AFQjCNHg3__WMSv2OYgNpj7SFf3mLqY3vQ" target="_blank">CDC: talking with children</a>
+            <p>"The CDC has created guidance to help adults have conversations with children about COVID-19 & ways they can avoid getting & spreading the disease." (English, Spanish, & ASL)</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fchoicemutual.com%2Fkids-bereavment%2F&sa=D&sntz=1&usg=AFQjCNFhPv-aV8THmMRgVuqHsi-ASWINMw" target="_blank">Choice Mutual: tips to help your children deal with bereavement</a>
+            <p>Guidance for talking to children who are grieving, including a breakdown of bereavement by age groups & links to many other helpful resources.</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.judishouse.org%2Fcovid19-updates&sa=D&sntz=1&usg=AFQjCNF5leID-e7bXJJngJSQGqKepbpQxQ" target="_blank">Judi's House & JAG Institute</a>
+            <p>Judi’s House aims to help children & families grieving a death find connection & healing. They are modifying their methods of care to ensure those needing immediate support get the help they need during COVID-19. (English & Spanish)</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.who.int%2Fnews-room%2Fdetail%2F09-04-2020-children-s-story-book-released-to-help-children-and-young-people-cope-with-covid-19&sa=D&sntz=1&usg=AFQjCNGOcjwnI8vT1qeuhuyZunFRJU8lNw" target="_blank">World Health Organization: COVID children's book</a>
+            <p>A beautifully illustrated children's book intended to help kids understand & come to terms with COVID-19. The book is available for free download in 30+ languages.</p>
+          </div>
+        </div>
+        <div class="sub-link-box">
+          <h2>teens & young adults</h2>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fhealgrief.org%2Factively-moving-forward%2F&sa=D&sntz=1&usg=AFQjCNFhHCjyRTxfVkRTXmtbCAH3dMAQZA" target="_blank">Actively Moving Forward</a>
+            <p>"AMF is a national network created in response to the needs of grieving young adults."</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fhealgrief.org%2Factively-moving-forward%2F%2520%2509&sa=D&sntz=1&usg=AFQjCNHrPa-jTAsHYofGZwvFvaUgslt69g" target="_blank">AMF: Helpful tips for grieving college students</a>
+            <p>Suggestions from Actively Moving Forward for dealing with COVID-19 as a college student.</p>
+          </div>
+          <div class="link">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.teenwiseseattle.com%2Fgrieving-during-social-distancing-guest-blogger%2F&sa=D&sntz=1&usg=AFQjCNGhQFyk3AizOQppHlbaQt3CEluQ7w" target="_blank">Teen Wise: Grieving during social distancing</a>
+            <p>Suggestions for parents whose grieving teens are struggling with social distancing requirements.</p>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // opening and closing side menu
+        function openSlideMenu(){
+          document.getElementById('side-menu').style.width = '250px';
+        }
+
+        function closeSlideMenu(){
+          document.getElementById('side-menu').style.width = '0';
+          document.getElementById('general-dropdown').style.height = "0";
+          document.getElementById('drop-btn-1').innerHTML = "\u002B";
+          // document.getElementById('religion-dropdown').style.height = "0";
+        }
+
+        // showing map descriptions
+        function showDesc(id){
+          document.getElementById(id).style.height = "100px";
+        }
+
+        function hideDesc(id){
+          document.getElementById(id).style.height = "0px";
+        }
+
+        function dropdown(id){
+          document.getElementById(id).style.height = "80px";
+        }
+
+        function dropup(id){
+          document.getElementById(id).style.height = "0";
+        }
+      </script>
+    </div>
+
+    <footer class="footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="general.html">General</a></li>
+        <li><a href="map.html">Resources Near You</a></li>
+        <li><a href="religion.html">Spiritual & Religious</a></li>
+        <li><a href="gathering.html">Gathering</a></li>
+        <li><a href="planning.html">Planning Ahead</a></li>
+        <li><a href="kids.html">Kids & Young Adults</a></li>
+        <li><a href="voices.html">Voices</a></li>
+        <li><a href="about.php">About</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Willow - Home</title>
+  </head>
+  <body>
+    <div class="background">
+    </div>
+
+    <!-- expanding sidebar -->
+    <div id="side-menu" class="sidebar">
+        <a onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">Home</a>
+        <span id="drop-1" onmouseover="dropdown('general-dropdown')" onmouseout="dropup('general-dropdown')">
+          <a href="general.html">General</a>
+          <div id="general-dropdown">
+            <a href="databases.html">Databases</a>
+            <a href="support.html">Online Support Groups</a>
+            <a href="personal.html">Personal Coping</a>
+          </div>
+        </span>
+        <a href="map.html">Resources Near You</a>
+        <span id="drop-2" onmouseover="dropdown('religion-dropdown')" onmouseout="dropup('religion-dropdown')">
+          <a href="religion.html">Spiritual & Religious</a>
+          <div id="religion-dropdown">
+            <a href="christianity.html">Christianity</a>
+            <a href="judaism.html">Judaism</a>
+            <a href="islam.html">Islam</a>
+          </div>
+        </span>
+        <a href="gathering.html">Gathering</a>
+        <a href="planning.html">Planning Ahead</a>
+        <a href="kids.html">Kids & Young Adults</a>
+        <a href="voices.html">Voices</a>
+        <a href="about.php">About</a>
+    </div>
+
+    <div id="navbar">
+      <span id="left-navbar">
+        <span id="open-sidebar">
+          <a onclick="openSlideMenu()">
+            <svg width="20" height="20">
+              <path d="M0,5 20,5" stroke="#444" stroke-weight="3"/>
+              <path d="M0,10 20,10" stroke="#444" stroke-weight="3"/>
+              <path d="M0,15 20,15" stroke="#444" stroke-weight="3"/>
+            </svg>
+          </a>
+        </span>
+
+        <span id="willow-logo">
+          <a href="index.html">
+            <img src="images/willow.jpg" alt="">
+          </a>
+        </span>
+
+        <h3 id="willow-top-title">willow</h3>
+      </span>
+
+      <span id="right-navbar">
+        <a id="header-share-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScyr3UbyTQbbWcXZtbDlFMhCTRMxw6XzWECs20eh39spCDFRA/viewform" target="_blank"><button type="button" name="button">Share a resource</button></a>
+      </span>
+    </div>
+
+    <div class="container" id="container">
+
+      <div id="main-header">
+        <div id="main-header-box">
+          <h1 id="main-title">willow</h1>
+          <h2 id="subtitle">resources for the bereaved during COVID-19</h2>
+        </div>
+      </div>
+
+      <div id="welcome">
+        <p>Welcome to Willow! This website compiles resources from people all over the U.S., consolidating sources of support into one accessible database. If you have lost a loved one during this time, whether to COVID or not, this site will help you find support, comfort, and community.</p>
+        <br>
+        <p>Willow is collaborative! Please help this site grow by contributing sources you have found valuable.</p>
+        <span id="button-span"><a href="https://docs.google.com/forms/d/e/1FAIpQLScyr3UbyTQbbWcXZtbDlFMhCTRMxw6XzWECs20eh39spCDFRA/viewform" target="_blank"><button type="button" name="button">Share a resource</button></a></span>
+      </div>
+
+      <div id="site-map">
+        <span class="wrap-map">
+        <div class="map-box" onmouseover="showDesc('map-desc-1')" onmouseout="hideDesc('map-desc-1')">
+          <a class="map-link" href="general.html"><img class="map-img" src="images/general.jpeg" alt="general image"></a>
+          <div id="map-desc-1" class="map-description">
+            <p>General support for those coping with loss.</p>
+          </div>
+        </div>
+
+        <div class="map-box" onmouseover="showDesc('map-desc-2')" onmouseout="hideDesc('map-desc-2')">
+          <a class="map-link" href="map.html">
+            <img class="map-img" src="images/map.jpeg" alt="map image">
+          </a>
+          <div id="map-desc-2" class="map-description">
+            <p>State-by-state funeral policies, digital estate laws, and more.</p>
+            <!-- <a id="map-link" href="#">
+              Click here for an interactive map
+            </a> -->
+          </div>
+        </div>
+
+        <div class="map-box" onmouseover="showDesc('map-desc-3')" onmouseout="hideDesc('map-desc-3')">
+          <a class="map-link" href="religion.html">
+            <img class="map-img" src="images/religion.jpeg" alt="spiritual image">
+          </a>
+          <div id="map-desc-3" class="map-description">
+            <p>Religious and spiritual talks, virtual faith communities, and more.</p>
+          </div>
+        </div>
+      </span>
+
+      <span class="wrap-map">
+        <div class="map-box" onmouseover="showDesc('map-desc-4')" onmouseout="hideDesc('map-desc-4')">
+          <a class="map-link" href="gathering.html">
+            <img class="map-img" src="images/gathering.jpeg" alt="gathering image">
+          </a>
+          <div id="map-desc-4" class="map-description">
+            <p>Help with planning virtual funerals and memorial services; creative ideas for mourning apart.</p>
+          </div>
+        </div>
+
+        <div class="map-box" onmouseover="showDesc('map-desc-5')" onmouseout="hideDesc('map-desc-5')">
+          <a class="map-link" href="planning.html">
+            <img class="map-img" src="images/planning.jpeg" alt="planning image">
+          </a>
+          <div id="map-desc-5" class="map-description">
+            <p>Advance planning, financial forms, legal guidance, and more.</p>
+          </div>
+        </div>
+
+        <div class="map-box" onmouseover="showDesc('map-desc-6')" onmouseout="hideDesc('map-desc-6')">
+          <a class="map-link" href="kids.html">
+            <img class="map-img" src="images/kids.jpeg" alt="kids image">
+          </a>
+          <div id="map-desc-6" class="map-description">
+            <p>Helping children and adolescents cope with loss.</p>
+          </div>
+        </div>
+      </span>
+
+      <span class="wrap-map">
+        <div class="map-box" onmouseover="showDesc('map-desc-7')" onmouseout="hideDesc('map-desc-7')">
+          <a class="map-link" href="voices.html">
+            <img class="map-img" src="images/voices.jpeg" alt="voices image">
+          </a>
+          <div id="map-desc-7" class="map-description">
+            <p>Articles, podcasts, commentaries, and conversations about living in isolation.</p>
+          </div>
+        </div>
+
+        <div class="map-box" onmouseover="showDesc('map-desc-8')" onmouseout="hideDesc('map-desc-8')">
+          <a class="map-link" href="about.php">
+            <img class="map-img" src="images/about.jpeg" alt="about image">
+          </a>
+          <div id="map-desc-8" class="map-description">
+            <p>More about this site: its creation and mission.</p>
+          </div>
+        </div>
+      </span>
+      </div>
+
+      <script>
+        // opening and closing side menu
+        function openSlideMenu(){
+          document.getElementById('side-menu').style.width = '250px';
+        }
+
+        function closeSlideMenu(){
+          document.getElementById('side-menu').style.width = '0';
+          document.getElementById('general-dropdown').style.height = "0";
+        }
+
+        // showing map descriptions
+        function showDesc(id){
+          document.getElementById(id).style.height = "100px";
+        }
+
+        function hideDesc(id){
+          document.getElementById(id).style.height = "0px";
+        }
+
+        function dropdown(id){
+          document.getElementById(id).style.height = "80px";
+        }
+
+        function dropup(id){
+          document.getElementById(id).style.height = "0";
+        }
+      </script>
+    <!-- container ends -->
+    </div>
+
+    <footer class="footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="general.html">General</a></li>
+        <li><a href="map.html">Resources Near You</a></li>
+        <li><a href="religion.html">Spiritual & Religious</a></li>
+        <li><a href="gathering.html">Gathering</a></li>
+        <li><a href="planning.html">Planning Ahead</a></li>
+        <li><a href="kids.html">Kids & Young Adults</a></li>
+        <li><a href="voices.html">Voices</a></li>
+        <li><a href="about.php">About</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
