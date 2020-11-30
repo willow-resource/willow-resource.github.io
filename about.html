@@ -1,60 +1,3 @@
-<?php
-  // message vars
-  $msg = '';
-  $msgClass = '';
-
-  // check for Submit
-  if(filter_has_var(INPUT_POST, 'submit')){
-    //get form data
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-
-    // check required fields
-    if(!empty($email) && !empty($name) && !empty($message)){
-      // check email
-      if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
-        $msg = 'Please enter a valid email';
-      } else {
-        // recipient Email
-        $toEmail = 'galenwinsor@willow-resource.com';
-        $subject = 'Contact Request From '.$name;
-        $body = '<h2>Contact Request</h2>
-          <h4>Name</h4><p>'.$name.'</p>
-          <h4>Email</h4><p>'.$email.'</p>
-          <h4>Message</h4><p>'.$message.'</p>
-        ';
-
-        // email headers
-        $headers = 'MIME-Version: 1.0' . '\r\n';
-        $headers .= 'Content-Type:text/html;charset=UTF-8'.'\r\n';
-
-        // additional headers
-        $headers .= 'From: '.$name."<".$email.'>'.'\r\n';
-
-        if(mail($toEmail, $subject, $body, $headers)){
-          // email sent
-          $msg = 'Your email has been sent';
-        } else {
-          $msg = 'Oops! There was an error while sending your email. Please try again.';
-        }
-      }
-    } else {
-      $msg = 'Please fill in all fields';
-    }
-  }
-
-  echo '<script> error = "'.$msg.'"</script>';
- ?>
-
-<script type="text/javascript">
-  var error;
-
-  if(error != ''){
-    alert(error);
-  }
-</script>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -157,26 +100,6 @@
       <div class="about-blurb">
         <h2>about the site developer</h2>
         <p>My name is Galen Winsor. I'm a student at Brown University, studying environmental studies and computer science. I'm excited to continue building and improving Willow, and to help people cope with loss during this hard time. Beyond Willow and web design, I'm passionate about climate activism, music, and leveraging digital technology to fight misinformation online.</p>
-      </div>
-
-      <div class="about-blurb">
-        <h2>contact us</h2>
-        <p>Please reach out with any questions or concerns.</p>
-        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
-          <div class="form-item">
-            <label>Name</label>
-            <input type="text" name="name" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
-          </div>
-          <div class="form-item">
-            <label>Email</label>
-            <input type="text" name="email" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
-          </div>
-          <div class="form-item">
-            <label>Message</label>
-            <textarea name="message"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
-          </div>
-          <button type="submit" name="submit">Submit</button>
-        </form>
       </div>
 
       <script>
